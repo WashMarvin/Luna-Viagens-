@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Baloo Da 2";
+
+}
+
+html,
+body {
+  font-family: "Baloo Da 2 Serif";
+  text-rendering: optimizelegibility;
+}
+
+ body {
+   font-size: 16px;
+   overflow: hidden;
+ }
+
+ main {
+   width: 100%;
+   position: relative;
+ }
+
+ /* -- CSS DAS IMAGENS DE FUNDO -- */
+
+ .fundobg-index {
+  background-image: url("../img/plano-fundo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+ .fundobg-passagens {
+  background-image: url("../img/baloon_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+ .fundobg-pacotes {
+  background-image: url("../img/peoples_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+ .fundobg-contato {
+  background-image: url("../img/road1_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+ /* -- CSS DA SCREEN -- */
+
+.tela {
+  position: relative;
+  margin: 0;
+  background-color: rgba(114, 109, 141, 0.3);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ /* -- CSS DA BARRA DE MENUS -- */
+
+.cabecalho {
+  position: absolute;
+  width: 100%;
+  top: 30px
+  
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003555;
+  opacity: 0.6;
+}
+
+#image {
+  width: 150px;
+  margin-left: 3em;
+  padding-top: 10px;
+}
+
+.container nav ul {
+  display: flex;
+  width: 70%;
+  list-style: none;
+  padding-right: 3em;
+  
+}
+
+.container nav ul li {
+  margin-left: 3em; 
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #ffff;
+  
+}
+
+.container nav ul li a:hover {
+  color: yellow;
+}
+
+
+ /* -- CSS TEXTO DA PAGINA INICIAL -- */
+
+.banner {
+  margin: 0 auto 0 0;
+  width: 60%;
+  position: relative;
+  text-align: left; 
+  top: 180px;
+  left: 15em;
+}
+
+.banner h1 {
+  color: yellow;
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  text-shadow: .04em .04em 3px rgba(0, 0, 0, 0.3);
+}
+
+.banner h3 {
+  color: rgb(187, 48, 48);
+  font-size: 4em;
+  
+  text-shadow: .04em .04em 3px rgba(0, 0, 0, 0.3);
+  line-height: 1.1em;
+}
+
+ /* -- CSS DO RODAPÉ -- */
+
+.footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 93vh;
+  color: yellow;
+  opacity: 0.5;
+} 
+
+ /* -- CSS DOS CARDS -- */
+
+.passagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5em;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 14em;
+  height: 18em;
+  
+}
+
+.sessao-cards { 
+  position: absolute; 
+  text-align: center; 
+  top: 160px;
+  left: 15em;
+}
+
+.sessao-cards h1 {
+  padding: .8em;
+  color: yellow;
+  text-transform: uppercase;
+  text-shadow: .1em .15em 3px rgba(0, 0, 0, .1);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffff;
+  box-shadow: .1em .1em 1px rgba(0, 0, 0, .3);
+}
+
+.card-img-wrapper img {
+  object-fit: cover;
+  opacity: .9;
+  transition: opacity .3s;
+ 
+  width: 100%;
+  height: 100%;
+  box-shadow: .1em .1em 1px rgba(0, 0, 0, .3);
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  text-shadow: 0.1em .1em .5px rgba(0, 0, 0, 0.6);
+}
+
+.card-info h3 {
+  position: absolute;
+  bottom: 230px;
+  font-size: 1.5em;
+  color: rgba(255, 251, 251, 0.933);
+}
+
+.card-info h4 {
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: red;
+  
+}
+
+.card-info p {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 40px;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+.card:hover .card-info p {
+  bottom: 2em;
+  font-size: 1.3em;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .card-img-wrapper img {
+  opacity: 1;
+}
+
+.formulario {
+  position: absolute;  
+  width: 43%;
+  top: 180px;
+  left: 15em;
+  padding-bottom: 20px;
+  border-radius: 1.2em;
+  background-color: #434444;
+  opacity: .5;
+}
+
+.contato h1 {
+  position: absolute; 
+  text-align: left;
+  color: yellow; 
+  font-size: 2em;
+  text-shadow: .1em .15em 3px rgba(0, 0, 0, .1);
+  width: 50%;
+  top: 130px;
+  left: 8em;
+}
+
+
+.area-form {
+  padding: 1em 0 0 5em;
+ 
+}
+
+.area-form input {
+  width: 30em;
+  height: 40px;
+}
+
+label {
+  color: #ffff;
+}
+
+/* -- RESPONSIVIDADE DA PAGINA -- */
+
+@media (max-width: 768px) {
+  .banner {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .container nav ul {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+}
+
+@media (max-width: 630px) {
+   .container ul li {
+    display: none;
+    
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #ffff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: .3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #003555;
+    
+  }
+
+  .menu-section.on nav ul li {
+    display: block;
+    
+  }
+
+  .menu-section.on nav ul li a {
+    transition-duration: .5s;
+    font-size: 2em;
+    line-height: 3em;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 90px;
+    top: 35px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -10px);
+  }
+
+  .tela {
+    background-color: rgb(114, 109, 141);
+    
+  }
+
+  .passagens {
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+
+  .text-area {
+    columns: "30";
+  }
+
+}
+
+
+
+
